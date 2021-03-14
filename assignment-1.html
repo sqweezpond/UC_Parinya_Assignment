@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="Front-end">
+    <meta name="author" content="Parinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<style>
+    .grid-container {
+        max-width: 1170px;
+        margin: auto;
+    }
+    
+    .grid-block-1 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    
+    .grid-block-2 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .grid-block-3 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .grid-block-4 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid-block-5 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .grid-block-6 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .grid-block-7 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .grid-element {
+        background: linear-gradient(180deg, rgb(218 32 103), rgb(128 48 141));
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        border: 3px solid #fff;
+        border-radius: 10px;
+        text-align: center;
+        padding: 25px 0;
+    }
+    
+    .grid-element-7-one {
+        grid-column: 1 / 1;
+        grid-row: 1;
+    }
+    
+    .grid-element-7-two {
+        grid-column: 2 / 6;
+        grid-row: 1;
+    }
+    
+    @media (max-width: 970px) {
+        .grid-block-1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .grid-block-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-block-3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-block-4 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .grid-block-5 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 750px) {
+        .grid-block-1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .grid-block-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-block-3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-block-4 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .grid-block-5 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .grid-element-7-one {
+            grid-column: 1/ 6;
+            grid-row: 1;
+        }
+        .grid-element-7-two {
+            grid-column: 1 / 6;
+            grid-row: 2;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .grid-block-1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-block-2 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .grid-block-3 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .grid-block-4 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .grid-block-5 {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .grid-element-7-one {
+            grid-column: 1/ 6;
+            grid-row: 1;
+        }
+        .grid-element-7-two {
+            grid-column: 1 / 6;
+            grid-row: 2;
+        }
+    }
+</style>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-block-1">
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+            <div class="grid-element">
+                1
+            </div>
+        </div>
+        <div class=" grid-block-2">
+            <div class="grid-element">
+                2
+            </div>
+            <div class="grid-element">
+                2
+            </div>
+            <div class="grid-element">
+                2
+            </div>
+            <div class="grid-element">
+                2
+            </div>
+            <div class="grid-element">
+                2
+            </div>
+            <div class="grid-element">
+                2
+            </div>
+        </div>
+        <div class="grid-block-3">
+            <div class="grid-element">
+                3
+            </div>
+            <div class="grid-element">
+                3
+            </div>
+            <div class="grid-element">
+                3
+            </div>
+            <div class="grid-element">
+                3
+            </div>
+        </div>
+        <div class="grid-block-4">
+            <div class="grid-element">
+                4
+            </div>
+            <div class="grid-element">
+                4
+            </div>
+            <div class="grid-element">
+                4
+            </div>
+        </div>
+        <div class="grid-block-5">
+            <div class="grid-element">
+                6
+            </div>
+            <div class="grid-element">
+                6
+            </div>
+        </div>
+        <div class="grid-block-6">
+            <div class="grid-element grid-element-7-one">
+                4
+            </div>
+            <div class="grid-element grid-element-7-two">
+                8
+            </div>
+        </div>
+        <div class="grid-block-7">
+            <div class="grid-element">
+                12
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

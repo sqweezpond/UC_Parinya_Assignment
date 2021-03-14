@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="Front-end">
+    <meta name="author" content="Parinya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+
+    <div style="display: flex;">
+        <h2>Click Position =</h2>
+        <h2 style="padding-left: 5px;"> X: </h2>
+        <h2 style="padding-left: 5px;" id="clientX">0</h2>
+        <h2>px</h2>
+        <h2 style="padding-left: 5px;">, Y: </h2>
+        <h2 style="padding-left: 5px;" id="clientY">0</h2>
+        <h2>px</h2>
+    </div>
+
+</body>
+
+<script>
+    function printMousePos(event) {
+        document.getElementById("clientX").innerHTML = event.clientX;
+        document.getElementById("clientY").innerHTML = event.clientY;
+    }
+    document.addEventListener("click", printMousePos);
+</script>
+
+</html>
